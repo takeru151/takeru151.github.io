@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dentaku</title>
+    </head>
+    <body>
+        <h1>電卓</h1>
+        <button onclick="sum()">足し算</button>
+        <button onclick="multiply()">掛け算</button>
+        <button onclick="ruijo()">累乗</button>
+        <!--<button onclick="fibonach()">フィボナッチ</button>-->
+        <script>
+            function sum() {
+                let a = Number(prompt("1つ目の数を入力", 1));
+                let b = Number(prompt("2つ目の数を入力", 2));
+                alert(`合計は${a + b}`);
+            }
+            function multiply() {
+                let a = Number(prompt("1つ目の数を入力", 1));
+                let b = Number(prompt("2つ目の数を入力", 2));
+                alert(`積は${a * b}`);
+            }
+            function ruijo() {
+                let a = Number(prompt("1つ目の数を入力", 1));
+                let b = Number(prompt("2つ目の数を入力", 2));
+                alert(`結果は${a ** b}`);
+            }
+        </script>
+    </body>
+</html>
